@@ -167,7 +167,7 @@ print(f'{success}{lg} -- Adding members from {w}{len(to_use)}{lg} account(s) --'
 adding_status = 0
 approx_members_count = 0
 for acc in to_use:
-    stop = index + 60
+    stop = index + 100
     c = TelegramClient(f'sessions/{acc[0]}', 3910389 , '86f861352f0ab76a251866059a6adbd6')
     print(f'{plus}{grey} User: {cy}{acc[0]}{lg} -- {cy}Starting session... ')
     c.start(acc[0])
